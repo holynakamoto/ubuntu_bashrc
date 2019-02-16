@@ -33,6 +33,12 @@ POWERLEVEL9K_CUSTOM_DOCKER_ICON_FOREGROUND="black"
 
 plugins=(
   git
+  bundler
+  dotenv
+  osx
+  rake
+  rbenv
+  ruby
 )
 
 source $ZSH/oh-my-zsh.sh
