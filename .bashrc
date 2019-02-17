@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+export ZSH=~/home/vagrant-omz/.oh-my-zsh
 
 # Vault Enviornment Variable
 export VAULT_ADDR="http://0.0.0.0:8200"
