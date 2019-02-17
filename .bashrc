@@ -150,6 +150,15 @@ source $ZSH/oh-my-zsh.sh
 
 # aliases
 
+alias fwtunnels='rg "crypto map OUTSIDE_IPSEC-Policy" | grep match'
+alias updateSC='/Users/nimoore/pfinfra/SC/configs/update.sh'
+alias updatePE='/Users/nimoore/pfinfra/PE1/configs/update.sh'
+alias vsset='sudo code /Users/nimoore/Library/Application Support/Code/User/settings.json'
+alias lu='/Users/nimoore/code/python/lookups.py | grep'
+alias s3mb='aws s3 mb'
+alias s3cp='aws s3 cp'
+alias imgcat='imgcat.sh'
+alias rancidup='./rancidup.sh'
 alias lsh='ls -lah'
 alias gd='git diff'
 alias gp='git push'
@@ -185,7 +194,7 @@ alias noscreen='pmset noidle'
 alias free='top -l 1 -s 0 | grep PhysMem'
 alias hqnet='ssh nmoore@10.12.13.51'
 alias bk='cd ..'
-alias find='find ./ -type f -exec grep -il "blah_blah_text" {} \;'
+alias findrm='find ./ -type f -exec grep -il "*.*" -exec rm '{}' +'
 alias pcat='pygmentize -f terminal256 -O style=native -g'
 alias tulpn='sudo lsof -i -n -P'
 alias record='asciinema rec'
@@ -283,7 +292,6 @@ alias Vaeu='vault auth enable userpass'
 alias Vl='vault login'
 alias Vtc='vault token create'
 alias Vrolessh='Vw ssh/roles/admin key_type=otp default_user=vaultuser cidr_list=0.0.0.0/0,0.0.0.0/0'
-# show vault persimissions to give path for user
 alias Vtcap='vault token capabilities'
 alias Vlta='vault list auth/token/accessors'
 alias Vtla='vault token lookup -accessor'
@@ -317,7 +325,6 @@ alias rhistory="python /Users/nimoore/ripestat-text/scripts/ripestat -w routing_
 alias rstatus="python /Users/nimoore/ripestat-text/scripts/ripestat -w routing_status"
 alias asadv="python /Users/nimoore/ripestat-text/scripts/ripestat -w announced_prefixes"
 alias asview="python /Users/nimoore/ripestat-text/scripts/ripestat -w as_overview"
-alias foxoff='curl "https://api.sfox.com/v1/offer/buy?amount=1" -u "f0751e450efe7eadde57a019b7fbb1275e81001297d18f37c7e7dc4e2532fc80:"'
 alias cwho='whois -h whois.cymru.com'
 alias reboot='sudo shutdown -r now'
 alias mtr='sudo mtr'
